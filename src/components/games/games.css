@@ -1,0 +1,39 @@
+.games > img {
+  background-size: contain;
+  background-position: center;
+}
+
+.games .wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -185px;
+}
+
+.games .swiper-slide {
+  width: 190px !important;
+  height: 230px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.games .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease-in-out;
+  filter: grayscale(1);
+}
+
+.games .swiper-slide img:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 500px) {
+  .games > img {
+    height: 90vh;
+  }
+  .games .swiper-slide {
+    width: 160px !important;
+    height: 200px;
+  }
+}

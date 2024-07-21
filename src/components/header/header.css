@@ -1,0 +1,36 @@
+.main-cards {
+  margin-top: -7%;
+}
+
+.main-cards .wrapper {
+  padding: 0 15%;
+  gap: 8px;
+  justify-content: center;
+}
+
+.main-cards .wrapper .img-wrapper {
+  width: 30%;
+  overflow: hidden;
+}
+.main-cards .wrapper .img-wrapper img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-cards .wrapper .img-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .main-cards .wrapper {
+    padding: 0;
+  }
+  .main-cards {
+    margin-top: -15%;
+  }
+  .header-video {
+    height: 70vh;
+    width: auto;
+    max-width: none;
+  }
+}

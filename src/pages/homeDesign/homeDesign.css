@@ -1,0 +1,56 @@
+.homeDesign {
+  width: calc(100vw - 400px) !important;
+}
+
+.homeDesign .design-title {
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  width: 100vw;
+  height: 45px;
+  background-color: rgb(9, 24, 46);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeDesign .navbar,
+.homeDesign .marquee {
+  width: calc(100vw - 400px) !important;
+}
+.homeDesign .navbar {
+  top: 85px !important;
+}
+.homeDesign .marquee-wrapper {
+  top: 45px !important;
+}
+.homeDesign .marquee {
+  top: 0;
+}
+
+.design.offcanvas.offcanvas-end {
+  right: 400px !important;
+  z-index: 10000000000;
+}
+
+@media (max-width: 1080px) {
+  .homeDesign {
+    width: 100vw !important;
+  }
+  .homeDesign .navbar,
+  .homeDesign .marquee {
+    width: 100vw !important;
+  }
+  .design.offcanvas.offcanvas-end {
+    right: 0 !important;
+  }
+  .homeDesign .design-title {
+    z-index: 100000;
+  }
+  .homeDesign .nav-mobile .menu-button {
+    z-index: -1;
+  }
+}

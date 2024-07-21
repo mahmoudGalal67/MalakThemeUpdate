@@ -1,0 +1,14 @@
+.submit-button {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  z-index: 10000;
+}
+
+.submit-button:hover {
+  background-color: rgb(129, 241, 138);
+}
+
+.submit-button:disabled {
+  background-color: rgba(201, 245, 245, 0.644);
+}

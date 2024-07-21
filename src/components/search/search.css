@@ -1,0 +1,21 @@
+.search .input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search .input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.modal-dialog .input-wrapper input::placeholder {
+  color: #60f4d4;
+}
+
+.search .input-wrapper svg {
+  width: 20px;
+}

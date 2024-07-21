@@ -1,0 +1,106 @@
+.info-swipper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  margin-bottom: 0;
+  padding: 10% 0;
+  background-image: url("../../assets/XpicGdqukY710HZkEjrrtjbcIXcwxjyCx389iv9Y.webp");
+}
+
+.info-swipper.main-slider {
+  height: 90vh;
+}
+
+.info-swipper .wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #2c2d30;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #60f4d4;
+  width: 1.5rem;
+  border-radius: 30%;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #8f9299;
+  font-size: 18px !important;
+}
+
+.info-spperwi .wrapper img {
+  width: 240px;
+}
+
+.info-swipper .wrapper p {
+  color: #d9808b;
+}
+.info-swipper .wrapper h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: 700 !important;
+}
+
+.info-swipper .wrapper a {
+  background-color: #d9808b;
+  border-color: #d9808b;
+  color: #585b61;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+.info-swipper:nth-child(2) {
+  background-image: url("../../assets/l5zdBFdYyLWjfVKOizzsrH9g8SLxc2WdKC0UFF5N.webp");
+}
+.info-swipper:nth-child(2) .wrapper p {
+  color: white;
+}
+
+.info-swipper:nth-child(2) .wrapper a {
+  background-color: #60f4d4;
+  color: #585b61;
+  border-radius: 25px;
+  padding: 12px;
+}
+
+.info-swipper:nth-child(3) {
+  background-image: url("../../assets/fBq6KEJKk9JKFEgjyk1y2NYU6S2DNfTTeTS6gdbB.webp");
+}
+
+.info-swipper:nth-child(3) .wrapper p {
+  color: white;
+}
+
+.info-swipper:nth-child(3) .wrapper a {
+  background-color: #60f4d4;
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  color: #585b61;
+  border-radius: 25px;
+  padding: 12px;
+}
+
+@media (max-width: 500px) {
+  /* .swiper-slide {
+    height: 100vh;
+  } */
+}

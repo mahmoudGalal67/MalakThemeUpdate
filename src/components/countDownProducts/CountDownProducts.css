@@ -1,0 +1,99 @@
+.count-header {
+  padding: 25px 0;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-header .count-header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 26px;
+}
+
+.break-line {
+  width: 25%;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+.count-header .count-header-title h3 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.count-header .count-header-title p {
+  color: gray;
+}
+.count-header .count-header-title a {
+  color: rgb(75, 71, 71);
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 30px;
+  background-color: #60f4d4;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.title:hover::after {
+  width: 80%;
+}
+
+.count-down-wrapper .count-down {
+  margin: 8px;
+  display: flex;
+}
+
+.count-down-wrapper .count-down span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 2px 4px;
+  background-color: #f3f4f6;
+}
+
+.count-down-wrapper .count-down span span {
+  color: rgb(161, 156, 156);
+}
+
+.products-wrapper {
+  padding: 0 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .count-header {
+    gap: 8px;
+    padding: 0 1%;
+  }
+  .products-wrapper {
+    padding: 0 1%;
+  }
+}
+
+@media (max-width: 850px) {
+  .products-wrapper {
+    padding: 0 2%;
+  }
+}

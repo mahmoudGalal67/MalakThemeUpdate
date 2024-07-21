@@ -1,0 +1,24 @@
+.marquee {
+  padding: 8px;
+  background-color: #00414d;
+  display: flex;
+}
+
+.rfm-marquee {
+  min-width: fit-content !important;
+}
+
+.rfm-child {
+  margin: 0 16px;
+}
+
+.marquee-wrapper {
+  gap: 6px;
+}
+
+.marquee-wrapper p {
+  color: #aef253;
+}
+.marquee-wrapper p.white {
+  color: white;
+}

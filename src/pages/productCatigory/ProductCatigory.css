@@ -1,0 +1,124 @@
+.product-catigory {
+  padding: 0 14%;
+  margin: 45px 0;
+}
+
+.product-catigory .header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.product-catigory .header h2 {
+  text-align: right;
+  font-size: 22px;
+}
+
+.product-catigory .header p {
+  color: rgb(138, 133, 133);
+  text-align: right;
+}
+
+.product-catigory .header > img {
+  width: 45px;
+}
+
+.product-catigory .wrapper {
+  display: flex;
+  gap: 7px;
+}
+
+.product-catigory .wrapper .products-container {
+  flex: 4;
+}
+.product-catigory .wrapper .products-container button.show-filters {
+  display: none;
+  background-color: #60f4d4;
+  border-color: #60f4d4;
+}
+
+.product-catigory .wrapper .products-container select {
+  margin-left: auto;
+  display: block;
+}
+
+.product-catigory .wrapper .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-around;
+}
+
+.product-catigory .wrapper .filters {
+  flex: 1;
+}
+.product-catigory .filters .item,
+.filters .accordion-body .item {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+}
+.product-catigory .wrapper .filters .item input {
+  border-color: #60f4d4;
+}
+.product-catigory .wrapper .filters .item input:checked {
+  background-color: #60f4d4;
+  border-color: #60f4d4;
+}
+
+.product-catigory .wrapper .filters .item label {
+  font-size: 14px;
+  color: rgb(138, 133, 133);
+}
+
+.product-catigory .wrapper .filters .accordion-item button {
+  flex-direction: row-reverse;
+  justify-content: space-between !important;
+  font-weight: 500;
+  color: black;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.product-catigory .wrapper .filters .accordion-button::after {
+  margin: 0;
+}
+
+.product-catigory .wrapper .products .product {
+  width: 23%;
+  margin: 14px 0;
+  height: auto;
+}
+.product-catigory .wrapper .products .product a {
+  font-size: 14px;
+}
+
+.offcanvas-body {
+  padding: 25px;
+}
+
+@media (max-width: 1080px) {
+  .product-catigory .wrapper .products-container button.show-filters {
+    display: block;
+  }
+  .product-catigory .wrapper .filters {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .product-catigory .wrapper .products-container button.show-filters {
+    display: block;
+  }
+  .product-catigory .wrapper .filters {
+    display: none;
+  }
+
+  .product-catigory .wrapper .products .product {
+    width: 48%;
+  }
+  .product-catigory {
+    padding: 2%;
+  }
+}

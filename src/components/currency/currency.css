@@ -1,0 +1,19 @@
+.currencyControl .radio-wrapper {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9a9ca1;
+}
+
+.currencyControl .form-check {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 35px;
+  align-items: center;
+}
+
+.form-check-input:checked {
+  background-color: #60f4d4;
+  border-color: #60f4d4;
+}

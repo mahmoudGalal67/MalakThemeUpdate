@@ -1,0 +1,78 @@
+.questions {
+  padding: 0 16%;
+  margin: 25px 0;
+}
+
+.questions .info {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.questions .info h3 {
+  font-size: 18px;
+}
+
+.questions .info p {
+  color: rgb(119, 116, 116);
+  font-size: 14px;
+}
+
+.questions .accordion {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.questions .accordion .accordion-header {
+  overflow: hidden;
+}
+
+.questions .accordion-button {
+  flex-direction: row-reverse;
+}
+
+.questions .accordion-item {
+  border-radius: 12px !important;
+  width: 48%;
+  height: max-content;
+  margin: 6px 0;
+  background-color: #f3f4f6;
+}
+
+.questions .accordion-button {
+  background-color: #f3f4f6 !important;
+}
+.questions .accordion-button::after {
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: initial;
+  background-image: url("../../assets/plus.svg");
+  background-size: cover;
+}
+
+.questions .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/minusFIll.svg");
+  background-size: cover;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  border: 2px solid #60f4d4;
+  background-color: transparent;
+}
+
+@media (max-width: 850px) {
+  .questions .accordion-item {
+    width: 100%;
+  }
+  .questions {
+    padding: 0 4%;
+  }
+}

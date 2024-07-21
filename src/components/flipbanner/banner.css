@@ -1,0 +1,15 @@
+.banner {
+  padding: 0 16%;
+  margin: 28px 0;
+}
+
+.banner :where(.ReactFlipCard__container) {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 500px) {
+  .banner {
+    padding: 0 2%;
+  }
+}
